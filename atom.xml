@@ -4,7 +4,7 @@
   <title><![CDATA[SeloGangsal]]></title>
   <link href="http://selogangsal.github.io/atom.xml" rel="self"/>
   <link href="http://selogangsal.github.io/"/>
-  <updated>2016-02-21T11:53:01-05:00</updated>
+  <updated>2016-02-21T12:10:26-05:00</updated>
   <id>http://selogangsal.github.io/</id>
   <author>
     <name><![CDATA[Dian Ardiansyah]]></name>
@@ -12,6 +12,24 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Creating a Github Blog Using Octopress]]></title>
+    <link href="http://selogangsal.github.io/catatan/2016/02/creating-a-github-blog-using-octopress/"/>
+    <updated>2016-02-21T12:09:22-05:00</updated>
+    <id>http://selogangsal.github.io/catatan/2016/02/creating-a-github-blog-using-octopress</id>
+    <content type="html"><![CDATA[<p>rgffffffffffffffffffff</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Jajal Tok]]></title>
+    <link href="http://selogangsal.github.io/catatan/2016/02/jajal-tok/"/>
+    <updated>2016-02-21T12:01:00-05:00</updated>
+    <id>http://selogangsal.github.io/catatan/2016/02/jajal-tok</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Post Pertama]]></title>
