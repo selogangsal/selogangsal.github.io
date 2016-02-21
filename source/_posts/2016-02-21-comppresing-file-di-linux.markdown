@@ -5,7 +5,7 @@ date: 2016-02-21 12:33:44 -0500
 comments: true
 categories: [Linux, Tutorial]
 ---
-<p>Both Linux and UNIX include various commands for Compressing and decompresses (read as expand compressed file). To compress files you can use gzip, bzip2 and zip commands. To expand compressed file (decompresses) you can use and gzip -d,  bunzip2 (bzip2 -d), unzip commands. </p>
+<p>Both Linux and UNIX include various commands for Compressing and decompresses (read as expand compressed file). To compress files you can use gzip, bzip2 and zip commands. To expand compressed file (decompresses) you can use and gzip -d,  bunzip2 (bzip2 -d), unzip commands. </p><!-- more -->
 <h3>Compressing files</h3>
 &nbsp;
 <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#60834A" width="100%" >
