@@ -91,3 +91,5 @@ categories: [Linux, Tutorial]
     <td width="34%">tar -ztvf pics.tar.gz<br>tar -jtvf data.tbz2</td>
   </tr>
 </table>
+
+cybercity
