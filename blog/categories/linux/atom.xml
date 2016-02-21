@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[SeloGangsal]]></title>
-  <link href="http://selogangsal.github.io/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Linux | SeloGangsal]]></title>
+  <link href="http://selogangsal.github.io/blog/categories/linux/atom.xml" rel="self"/>
   <link href="http://selogangsal.github.io/"/>
   <updated>2016-02-21T12:49:41-05:00</updated>
   <id>http://selogangsal.github.io/</id>
@@ -125,15 +125,6 @@
 
 
 <p>cybercity</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Post Pertama]]></title>
-    <link href="http://selogangsal.github.io/catatan/2016/02/post-pertama/"/>
-    <updated>2016-02-21T11:50:36-05:00</updated>
-    <id>http://selogangsal.github.io/catatan/2016/02/post-pertama</id>
-    <content type="html"><![CDATA[
 ]]></content>
   </entry>
   
