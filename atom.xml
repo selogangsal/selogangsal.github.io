@@ -4,7 +4,7 @@
   <title><![CDATA[SeloGangsal]]></title>
   <link href="http://selogangsal.github.io/atom.xml" rel="self"/>
   <link href="http://selogangsal.github.io/"/>
-  <updated>2016-02-21T12:49:41-05:00</updated>
+  <updated>2016-02-21T13:45:37-05:00</updated>
   <id>http://selogangsal.github.io/</id>
   <author>
     <name><![CDATA[Dian Ardiansyah]]></name>
@@ -19,6 +19,9 @@
     <updated>2016-02-21T12:33:44-05:00</updated>
     <id>http://selogangsal.github.io/catatan/2016/02/comppresing-file-di-linux</id>
     <content type="html"><![CDATA[<p>Both Linux and UNIX include various commands for Compressing and decompresses (read as expand compressed file). To compress files you can use gzip, bzip2 and zip commands. To expand compressed file (decompresses) you can use and gzip -d,  bunzip2 (bzip2 -d), unzip commands. </p>
+
+
+<!-- more -->
 
 
 <h3>Compressing files</h3>
