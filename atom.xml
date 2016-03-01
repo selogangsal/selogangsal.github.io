@@ -4,7 +4,7 @@
   <title><![CDATA[SeloGangsal]]></title>
   <link href="http://selogangsal.github.io/atom.xml" rel="self"/>
   <link href="http://selogangsal.github.io/"/>
-  <updated>2016-03-01T13:35:50-05:00</updated>
+  <updated>2016-03-01T13:43:27-05:00</updated>
   <id>http://selogangsal.github.io/</id>
   <author>
     <name><![CDATA[Dian Ardiansyah]]></name>
@@ -12,6 +12,25 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Install PHP Dengan Json Module]]></title>
+    <link href="http://selogangsal.github.io/catatan/2016/03/cara-install-php-dengan-json-module/"/>
+    <updated>2016-03-01T13:39:52-05:00</updated>
+    <id>http://selogangsal.github.io/catatan/2016/03/cara-install-php-dengan-json-module</id>
+    <content type="html"><![CDATA[<p>Berikut adalah cara mudah untuk menginstall PHP serta module php-json, saya disini menggunakan OS Centos, berikut adalah caranya. <!-- more --></p>
+
+<figure class='code'><figcaption><span>install php </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>yum install httpd
+</span><span class='line'>yum install php php-devel php-pecl-json
+</span><span class='line'>service restart httpd
+</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Cara Install FFMPEG Di Centos 7]]></title>
