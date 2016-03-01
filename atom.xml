@@ -4,7 +4,7 @@
   <title><![CDATA[SeloGangsal]]></title>
   <link href="http://selogangsal.github.io/atom.xml" rel="self"/>
   <link href="http://selogangsal.github.io/"/>
-  <updated>2016-03-01T13:34:24-05:00</updated>
+  <updated>2016-03-01T13:35:50-05:00</updated>
   <id>http://selogangsal.github.io/</id>
   <author>
     <name><![CDATA[Dian Ardiansyah]]></name>
@@ -19,7 +19,7 @@
     <updated>2016-03-01T13:27:22-05:00</updated>
     <id>http://selogangsal.github.io/catatan/2016/03/cara-install-ffmpeg-di-centos-7</id>
     <content type="html"><![CDATA[<p>FFMPEG Berguna untuk convert file multimedia ke berbagai format yang kita ingginkan. di bawah adalah cara install FFMPEG di Centos 7
-Menggunakan Repository dari nux-dekstop.</p>
+Menggunakan Repository dari nux-dekstop.<!-- more --></p>
 
 <figure class='code'><figcaption><span>Install rpm nux-dekstop </span></figcaption>
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -29,7 +29,7 @@ Menggunakan Repository dari nux-dekstop.</p>
 
 <p>kemudian install FFMEG</p>
 
-<figure class='code'><figcaption><span>Install rpm nux-dekstop </span></figcaption>
+<figure class='code'><figcaption><span>Install FFMPEG </span></figcaption>
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='bash'><span class='line'>yum install ffmpeg ffmpeg-devel
 </span></code></pre></td></tr></table></div></figure>
