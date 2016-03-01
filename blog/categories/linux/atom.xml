@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Linux | SeloGangsal]]></title>
   <link href="http://selogangsal.github.io/blog/categories/linux/atom.xml" rel="self"/>
   <link href="http://selogangsal.github.io/"/>
-  <updated>2016-02-22T11:18:01-05:00</updated>
+  <updated>2016-03-01T13:34:24-05:00</updated>
   <id>http://selogangsal.github.io/</id>
   <author>
     <name><![CDATA[Dian Ardiansyah]]></name>
@@ -12,6 +12,28 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Install FFMPEG Di Centos 7]]></title>
+    <link href="http://selogangsal.github.io/catatan/2016/03/cara-install-ffmpeg-di-centos-7/"/>
+    <updated>2016-03-01T13:27:22-05:00</updated>
+    <id>http://selogangsal.github.io/catatan/2016/03/cara-install-ffmpeg-di-centos-7</id>
+    <content type="html"><![CDATA[<p>FFMPEG Berguna untuk convert file multimedia ke berbagai format yang kita ingginkan. di bawah adalah cara install FFMPEG di Centos 7
+Menggunakan Repository dari nux-dekstop.</p>
+
+<p><figure class='code'><figcaption><span>Install rpm nux-dekstop </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>yum -y install epel-release <span class="p">&amp;</span>amp<span class="p">;&amp;</span>amp<span class="p">;</span> rpm -Uvh &lt;a <span class="nv">href</span><span class="o">=</span><span class="s2">&quot;http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release-0-5.el7.nux.noarch.rpm&quot;</span>&gt;http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release-0-5.el7.nux.noarch.rpm&lt;/a&gt;
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p>kemudian install FFMEG</p>
+
+<p><figure class='code'><figcaption><span>Install rpm nux-dekstop </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>yum install ffmpeg ffmpeg-devel
+</span></code></pre></td></tr></table></div></figure></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Comppresing File Di LINUX]]></title>
