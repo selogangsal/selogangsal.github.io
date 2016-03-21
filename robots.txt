@@ -1,4 +1,1 @@
-User-agent: *
-Disallow: 
-
 Sitemap: http://selogangsal.github.io/sitemap.xml 
