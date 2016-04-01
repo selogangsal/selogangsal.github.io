@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Linux | SeloGangsal]]></title>
   <link href="http://selogangsal.github.io/blog/categories/linux/atom.xml" rel="self"/>
   <link href="http://selogangsal.github.io/"/>
-  <updated>2016-04-01T00:00:30-04:00</updated>
+  <updated>2016-04-01T02:05:53-04:00</updated>
   <id>http://selogangsal.github.io/</id>
   <author>
     <name><![CDATA[Dian Ardiansyah]]></name>
@@ -12,6 +12,72 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Cara Mengatasi No Public Key Debian]]></title>
+    <link href="http://selogangsal.github.io/catatan/2016/04/cara-mengatasi-no-public-key-debian/"/>
+    <updated>2016-04-01T02:00:49-04:00</updated>
+    <id>http://selogangsal.github.io/catatan/2016/04/cara-mengatasi-no-public-key-debian</id>
+    <content type="html"><![CDATA[<p>Buat yang mau update paket debian apt-get update dan ternyata mengalami masalah &ldquo;There is no public key available for the following key IDs:&rdquo; <!-- more --></p>
+
+<p><figure class='code'><figcaption><span>error apt-get update </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>root@at2:~# apt-get update
+</span><span class='line'>Get:1 &lt;a <span class="nv">href</span><span class="o">=</span><span class="s2">&quot;http://ftp.debian.org&quot;</span>&gt;http://ftp.debian.org&lt;/a&gt; wheezy Release.gpg <span class="o">[</span><span class="m">2373</span> B<span class="o">]</span>
+</span><span class='line'>Get:2 &lt;a <span class="nv">href</span><span class="o">=</span><span class="s2">&quot;http://ftp.debian.org&quot;</span>&gt;http://ftp.debian.org&lt;/a&gt; wheezy Release <span class="o">[</span><span class="m">191</span> kB<span class="o">]</span>
+</span><span class='line'>Get:3 &lt;a <span class="nv">href</span><span class="o">=</span><span class="s2">&quot;http://ftp.debian.org&quot;</span>&gt;http://ftp.debian.org&lt;/a&gt; wheezy/main i386 Packages <span class="o">[</span><span class="m">5858</span> kB<span class="o">]</span>
+</span><span class='line'>Get:4 &lt;a <span class="nv">href</span><span class="o">=</span><span class="s2">&quot;http://security.debian.org&quot;</span>&gt;http://security.debian.org&lt;/a&gt; wheezy/updates Release.gpg <span class="o">[</span><span class="m">1554</span> B<span class="o">]</span>
+</span><span class='line'>Get:5 &lt;a <span class="nv">href</span><span class="o">=</span><span class="s2">&quot;http://security.debian.org&quot;</span>&gt;http://security.debian.org&lt;/a&gt; wheezy/updates Release <span class="o">[</span><span class="m">102</span> kB<span class="o">]</span>
+</span><span class='line'>Get:6 &lt;a <span class="nv">href</span><span class="o">=</span><span class="s2">&quot;http://ftp.debian.org&quot;</span>&gt;http://ftp.debian.org&lt;/a&gt; wheezy/contrib i386 Packages <span class="o">[</span>42.3 kB<span class="o">]</span>
+</span><span class='line'>Get:7 &lt;a <span class="nv">href</span><span class="o">=</span><span class="s2">&quot;http://ftp.debian.org&quot;</span>&gt;http://ftp.debian.org&lt;/a&gt; wheezy/non-free i386 Packages <span class="o">[</span>77.5 kB<span class="o">]</span>
+</span><span class='line'>Get:8 &lt;a <span class="nv">href</span><span class="o">=</span><span class="s2">&quot;http://security.debian.org&quot;</span>&gt;http://security.debian.org&lt;/a&gt; wheezy/updates/main i386 Packages <span class="o">[</span><span class="m">322</span> kB<span class="o">]</span>
+</span><span class='line'>Get:9 &lt;a <span class="nv">href</span><span class="o">=</span><span class="s2">&quot;http://ftp.debian.org&quot;</span>&gt;http://ftp.debian.org&lt;/a&gt; wheezy/contrib Translation-en <span class="o">[</span>34.8 kB<span class="o">]</span>
+</span><span class='line'>Get:10 &lt;a <span class="nv">href</span><span class="o">=</span><span class="s2">&quot;http://ftp.debian.org&quot;</span>&gt;http://ftp.debian.org&lt;/a&gt; wheezy/main Translation-en <span class="o">[</span><span class="m">3846</span> kB<span class="o">]</span>
+</span><span class='line'>Get:11 &lt;a <span class="nv">href</span><span class="o">=</span><span class="s2">&quot;http://security.debian.org&quot;</span>&gt;http://security.debian.org&lt;/a&gt; wheezy/updates/contrib i386 Packages <span class="o">[</span><span class="m">14</span> B<span class="o">]</span>
+</span><span class='line'>Get:12 &lt;a <span class="nv">href</span><span class="o">=</span><span class="s2">&quot;http://security.debian.org&quot;</span>&gt;http://security.debian.org&lt;/a&gt; wheezy/updates/non-free i386 Packages <span class="o">[</span><span class="m">14</span> B<span class="o">]</span>
+</span><span class='line'>Get:13 &lt;a <span class="nv">href</span><span class="o">=</span><span class="s2">&quot;http://security.debian.org&quot;</span>&gt;http://security.debian.org&lt;/a&gt; wheezy/updates/contrib Translation-en <span class="o">[</span><span class="m">523</span> B<span class="o">]</span>
+</span><span class='line'>Get:14 &lt;a <span class="nv">href</span><span class="o">=</span><span class="s2">&quot;http://security.debian.org&quot;</span>&gt;http://security.debian.org&lt;/a&gt; wheezy/updates/main Translation-en <span class="o">[</span><span class="m">183</span> kB<span class="o">]</span>
+</span><span class='line'>Get:15 &lt;a <span class="nv">href</span><span class="o">=</span><span class="s2">&quot;http://ftp.debian.org&quot;</span>&gt;http://ftp.debian.org&lt;/a&gt; wheezy/non-free Translation-en <span class="o">[</span>66.1 kB<span class="o">]</span>
+</span><span class='line'>Get:16 &lt;a <span class="nv">href</span><span class="o">=</span><span class="s2">&quot;http://security.debian.org&quot;</span>&gt;http://security.debian.org&lt;/a&gt; wheezy/updates/non-free Translation-en <span class="o">[</span><span class="m">14</span> B<span class="o">]</span>
+</span><span class='line'>Fetched 10.7 MB in 11s <span class="o">(</span><span class="m">939</span> kB/s<span class="o">)</span>
+</span><span class='line'>Reading package lists<span class="p">&amp;</span>hellip<span class="p">;</span> Done
+</span><span class='line'>W: There is no public key available <span class="k">for</span> the following key IDs:
+</span><span class='line'>7638D0442B90D010
+</span><span class='line'>W: There is no public key available <span class="k">for</span> the following key IDs:
+</span><span class='line'>9D6D8F6BC857C906
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Untuk mengatasi ini caranya cukup mudah, berikut caranya.</p>
+
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>apt-get install aptitude
+</span><span class='line'>aptitude install debian-keyring debian-archive-keyring
+</span></code></pre></td></tr></table></div></figure></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Cara Install PHP Dengan Json Module]]></title>

@@ -1,0 +1,269 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Cara Mengatasi No Public Key Debian - SeloGangsal</title>
+  <meta name="author" content="Dian Ardiansyah">
+
+  
+  <meta name="description" content="Buat yang mau update paket debian apt-get update dan ternyata mengalami masalah &ldquo;There is no public key available for the following key IDs:& &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://selogangsal.github.io/catatan/2016/04/cara-mengatasi-no-public-key-debian/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="SeloGangsal" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">SeloGangsal</a></h1>
+  
+    <h2>Cuma catatan selogangsal.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="sitesearch" value="selogangsal.github.io">
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Cara Mengatasi No Public Key Debian</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-04-01T02:00:49-04:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>1</span><span class='date-suffix'>st</span>, <span class='date-year'>2016</span></span> <span class='time'>2:00 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Buat yang mau update paket debian apt-get update dan ternyata mengalami masalah &ldquo;There is no public key available for the following key IDs:&rdquo; <!-- more --></p>
+
+<figure class='code'><figcaption><span>error apt-get update </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>root@at2:~# apt-get update
+</span><span class='line'>Get:1 http://ftp.debian.org wheezy Release.gpg <span class="o">[</span><span class="m">2373</span> B<span class="o">]</span>
+</span><span class='line'>Get:2 http://ftp.debian.org wheezy Release <span class="o">[</span><span class="m">191</span> kB<span class="o">]</span>
+</span><span class='line'>Get:3 http://ftp.debian.org wheezy/main i386 Packages <span class="o">[</span><span class="m">5858</span> kB<span class="o">]</span>
+</span><span class='line'>Get:4 http://security.debian.org wheezy/updates Release.gpg <span class="o">[</span><span class="m">1554</span> B<span class="o">]</span>
+</span><span class='line'>Get:5 http://security.debian.org wheezy/updates Release <span class="o">[</span><span class="m">102</span> kB<span class="o">]</span>
+</span><span class='line'>Get:6 http://ftp.debian.org wheezy/contrib i386 Packages <span class="o">[</span>42.3 kB<span class="o">]</span>
+</span><span class='line'>Get:7 http://ftp.debian.org wheezy/non-free i386 Packages <span class="o">[</span>77.5 kB<span class="o">]</span>
+</span><span class='line'>Get:8 http://security.debian.org wheezy/updates/main i386 Packages <span class="o">[</span><span class="m">322</span> kB<span class="o">]</span>
+</span><span class='line'>Get:9 http://ftp.debian.org wheezy/contrib Translation-en <span class="o">[</span>34.8 kB<span class="o">]</span>
+</span><span class='line'>Get:10 http://ftp.debian.org wheezy/main Translation-en <span class="o">[</span><span class="m">3846</span> kB<span class="o">]</span>
+</span><span class='line'>Get:11 http://security.debian.org wheezy/updates/contrib i386 Packages <span class="o">[</span><span class="m">14</span> B<span class="o">]</span>
+</span><span class='line'>Get:12 http://security.debian.org wheezy/updates/non-free i386 Packages <span class="o">[</span><span class="m">14</span> B<span class="o">]</span>
+</span><span class='line'>Get:13 http://security.debian.org wheezy/updates/contrib Translation-en <span class="o">[</span><span class="m">523</span> B<span class="o">]</span>
+</span><span class='line'>Get:14 http://security.debian.org wheezy/updates/main Translation-en <span class="o">[</span><span class="m">183</span> kB<span class="o">]</span>
+</span><span class='line'>Get:15 http://ftp.debian.org wheezy/non-free Translation-en <span class="o">[</span>66.1 kB<span class="o">]</span>
+</span><span class='line'>Get:16 http://security.debian.org wheezy/updates/non-free Translation-en <span class="o">[</span><span class="m">14</span> B<span class="o">]</span>
+</span><span class='line'>Fetched 10.7 MB in 11s <span class="o">(</span><span class="m">939</span> kB/s<span class="o">)</span>
+</span><span class='line'>Reading package lists... Done
+</span><span class='line'>W: There is no public key available <span class="k">for</span> the following key IDs:
+</span><span class='line'>7638D0442B90D010
+</span><span class='line'>W: There is no public key available <span class="k">for</span> the following key IDs:
+</span><span class='line'>9D6D8F6BC857C906
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Untuk mengatasi ini caranya cukup mudah, berikut caranya.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>apt-get install aptitude
+</span><span class='line'>aptitude install debian-keyring debian-archive-keyring
+</span></code></pre></td></tr></table></div></figure>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Dian Ardiansyah</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2016-04-01T02:00:49-04:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>1</span><span class='date-suffix'>st</span>, <span class='date-year'>2016</span></span> <span class='time'>2:00 am</span></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/linux/'>linux</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://selogangsal.github.io/catatan/2016/04/cara-mengatasi-no-public-key-debian/" data-via="" data-counturl="http://selogangsal.github.io/catatan/2016/04/cara-mengatasi-no-public-key-debian/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/catatan/2016/03/cara-install-php-dengan-json-module/" title="Previous Post: Cara install PHP dengan json module">&laquo; Cara install PHP dengan json module</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/catatan/2016/04/cara-mengatasi-no-public-key-debian/">Cara Mengatasi No Public Key Debian</a>
+      </li>
+    
+      <li class="post">
+        <a href="/catatan/2016/03/cara-install-php-dengan-json-module/">Cara Install PHP Dengan Json Module</a>
+      </li>
+    
+      <li class="post">
+        <a href="/catatan/2016/03/cara-install-ffmpeg-di-centos-7/">Cara Install FFMPEG Di Centos 7</a>
+      </li>
+    
+      <li class="post">
+        <a href="/catatan/2016/02/comppresing-file-di-linux/">Comppresing File Di LINUX</a>
+      </li>
+    
+      <li class="post">
+        <a href="/catatan/2016/02/post-pertama/">Post Pertama</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+<section>
+ <h1>Categories</h1>
+ <ul id="categories">
+	<li class='category'><a href='/blog/categories/linux/'>linux (4)</a></li>
+<li class='category'><a href='/blog/categories/tutorial/'>tutorial (1)</a></li>
+
+ </ul>
+</section>
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2016 - Dian Ardiansyah -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
